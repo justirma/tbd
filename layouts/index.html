@@ -1,0 +1,70 @@
+{{ define "title"}} {{ .Site.Title}} {{end}}
+{{ define "header"}} {{ partial "header" .}} {{end}}
+{{ define "main"}}
+
+<div id="main">
+  <div id="hero">
+    <h1>{{.Title}}</h1>
+    <p>{{.Description}}</p>
+  </div>
+
+  <div id="action-buttons">
+    <a class="button primary big" href="mailto:irma@techbizdesign"
+      onclick="_gaq.push(['_trackEvent', 'kube', 'download']);">Free consultation</a>
+
+    <a class="button outline big" href="https://discord.gg/AbMeHej"
+      onclick="_gaq.push(['_trackEvent', 'kube', 'github']);">Join
+      Community</a>
+    <p>Consultation is 15 minutes at no cost to you. No strings attached.</p>
+  </div>
+  <div class="message focus" data-component="message"> I love to keep the community <mark>updated with news, updates and
+      more</mark>. Don't miss a thing. Jump into my mailing list!<span class="close small"></span>
+    <a class="button inverted small " href="/">Sign up! </a>
+  </div>
+  <div id="kube-features">
+    <div class="row gutters">
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Baseline" height="48" src="{{ "/img/kube/icon-baseline.png" | relURL }}" width="48">
+        </figure>
+        <h3>Set a foundation</h3>
+        <p>No team is successful without stepping back and creating a system that will
+          strengthen a distributed or remote team year over year.</p>
+      </div>
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Typography" height="48" src="{{ "/img/kube/icon-typo.png" | relURL }}" width="48">
+        </figure>
+        <h3>Build trust</h3>
+        <p>Working remotely or with a distributed team creates barries. We'll help you brainstorm
+          ideas that can instill trust from day 1.</p>
+      </div>
+      <div class="col col-4 item">
+        <figure>
+          <img alt="Minimalism" height="48" src="{{ "/img/kube/icon-minimalism.png" | relURL }}" width="48">
+        </figure>
+        <h3>Use the right tech</h3>
+        <p>Slack? Email? Zoom? There's infinite tools. By observing how your team communicates
+          we can help audit the tools you use.</p>
+      </div>
+    </div>
+    <div class="row gutters">
+      <div class="col col-4 item">
+        <h4>Top-down approach</h4>
+        <p>It all starts at the top. Refactoring the thinking with leadership is the first step to creating a healthy
+          remote culture. </p>
+      </div>
+      <div class="col col-4 item">
+        <h4>Juggle different time zones</h4>
+        <p>Don't worry - there's a solution for this. We'll get you set up.</p>
+      </div>
+      <div class="col col-4 item">
+        <h4>Foster team relationships</h4>
+        <p>From virtual watercoolers to in-person retreats there's a number of ways we can work
+          together to find ways that will bring your team closer.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+{{ define "footer"}} {{ partial "footer" .}} {{end}}
