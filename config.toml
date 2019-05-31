@@ -1,0 +1,26 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "TechBizDesign"
+theme = "kube"
+description = "TBD is part consultancy & part community space helping remote managers, entrepreneurs, makers empower their remote & distributed team to do their best work."
+Paginate = 4
+
+[Params]
+  RSSLink = "/index.xml"
+  author = "TechBizDesign" # add your company name
+  github = "" # add your github profile name
+  twitter = "https://twitter.com/techbizdesign" # add your twitter profile
+  email = "irma@techbizdesign.xyz"
+
+[[menu.main]]
+    name = "Resources"
+    weight = -100
+    url = "/docs/"
+[[menu.main]]
+    name = "Blog"
+    weight = -100
+    url = "/blog/"
+[[menu.main]]
+    name = "Faq"
+    weight = -100
+    url = "/faq/"
